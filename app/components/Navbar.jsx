@@ -4,16 +4,16 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <div className="flex items-center justify-between px-20 py-4 bg-gray-800 text-white">
-            <div className="flex items-center space-x-2">
+        <div className="flex items-center justify-between px-20 py-8 bg-gray-800 text-white">
+            <div className="flex items-center space-x-5">
                 <Image
                     src={logo}
                     alt="ZB Engineering Logo"
-                    width={48}
-                    height={48}
+                    width={72}
+                    height={72}
                     // className="logo"
                 />
-                <p>ZB Engineering & Technology</p>
+                <p className="font-bold text-2xl">ZB Engineering & Technology</p>
             </div>
             <div>
                 <ul className="flex space-x-4">
