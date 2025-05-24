@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="flex justify-between items-start mt-10">
                 <div className="w-1/3">
                     <p className="text-lg font-bold py-4 text-justify">About</p>
-                    <p>We have the confidence to provide the best service for you, with the support of Professional and Certified HR that we currently have and the high-quality materials we use and structured work techniques, we will be able to realize timely completion of work.</p>
+                    <p>We have the confidence to provide the best service for you, with the support <br />of Professional and Certified HR that we currently have and the high-quality materials we use and structured work techniques, we will be able to realize <br /> timely completion of work.</p>
                 </div>
                 <div className="">
                     <p className="text-lg font-bold py-4">Office</p>

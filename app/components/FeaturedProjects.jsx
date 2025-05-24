@@ -1,0 +1,62 @@
+'use client';
+import { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+
+import FeatureCard from './FeatureCard';
+import featureProject1 from '../images/featureProjects/Royal Pacific  Tower 3D View -01 Chandrima Housing .jpeg'
+import featureProject2 from '../images/featureProjects/River Heaven 3D-02.jpg'
+import featureProject3 from '../images/featureProjects/FINAL RENDER-1.jpg'
+import featureProject4 from '../images/featureProjects/3d-4.jpg'
+import featureProject5 from '../images/featureProjects/Baki Bhai Zatrabari-2.jpg'
+import featureProject6 from '../images/featureProjects/Planet Housing Back Side View Kawla .jpg'
+
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+
+
+const FeaturedProjects = () => {
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
+    return (
+        <div className="relative px-20 py-16">
+            <h2 className="text-5xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">Featured Projects</h2>
+
+            {/* Custom Navigation Buttons */}
+            <button ref={prevRef} className="absolute left-44 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
+                <FaArrowAltCircleLeft />
+            </button>
+            <button ref={nextRef} className="absolute right-44 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
+                <FaArrowAltCircleRight />
+            </button>
+
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                // navigation={true} 
+                modules={[Navigation]}
+                onBeforeInit={(swiper) => {
+                    // @ts-ignore – Swiper's types don’t know about this override
+                    swiper.params.navigation.prevEl = prevRef.current;
+                    // @ts-ignore
+                    swiper.params.navigation.nextEl = nextRef.current;
+                }}
+                navigation={{
+                    prevEl: prevRef.current,
+                    nextEl: nextRef.current
+                }}
+                className="w-2/3 h-[350px] my-16"
+            >
+                <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject1} projectName="Royal Pacific Tower" location="Mohammadpur, Dhaka" /></SwiperSlide>
+                <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject2} projectName="Royal River Heaven" location="Dhaka" /></SwiperSlide>
+                <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject3} projectName="Abason" location="Aftab Nagor, Dhaka" /></SwiperSlide>
+                <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject4} projectName="Mannat Palace" location="Dhaka" /></SwiperSlide>
+                <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject5} projectName="Baki Palace" location="Jatrabari, Dhaka" /></SwiperSlide>
+                <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject6} projectName="Planet Housing" location="Kawla, Dhaka" /></SwiperSlide>
+            </Swiper>
+        </div>
+    );
+};
+
+export default FeaturedProjects;
