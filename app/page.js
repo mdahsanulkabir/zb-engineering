@@ -11,7 +11,7 @@ import CTA from "./components/CTA";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Stat />
       <Whowe />
@@ -19,7 +19,7 @@ export default function Home() {
       <FeaturedProjects />
       <CTA/>
       <Testimonial />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

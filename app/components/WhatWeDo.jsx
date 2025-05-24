@@ -9,12 +9,12 @@ const WhatWeDo = () => {
             <h2 className="text-5xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">What we do</h2>
             <div className="flex justify-center items-center pt-12">
                 <ul className="w-1/2 text-xl">
-                    <li>Design</li>
-                    <li>Draft</li>
-                    <li>Rajuk Approval Processing</li>
-                    <li>Consultancy</li>
-                    <li>Construction</li>
-                    <li>Interior Decoration</li>
+                    <li>Rajuk Plan Approval</li>
+                    <li>Civil Works Construction</li>
+                    <li>MEP Drawing, Design and Installation</li>
+                    <li>Engineering Consultancy</li>
+                    <li>Architectrual Drawing</li>
+                    <li>Interior and Exterior Decoration Works</li>
                 </ul>
                 <div className="relative w-1/2">
                     <Image
