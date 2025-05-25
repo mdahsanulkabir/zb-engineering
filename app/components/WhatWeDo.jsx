@@ -6,7 +6,7 @@ import stockPhoto2 from "../images/stock photo 2.jpg";
 const WhatWeDo = () => {
     return (
         <div className="relative w-full px-8 py-6 bg-[#135120]/8">
-            <h2 className="text-5xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">What we do</h2>
+            <h2 className="text-3xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">What we do</h2>
             <div className="flex justify-center pt-6">
                 <ul className="w-1/2 text-lg">
                     <li>Rajuk Plan Approval</li>
