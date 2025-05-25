@@ -15,9 +15,9 @@ export default function Home() {
       <Hero />
       <Stat />
       <Whowe />
-      <WhatWeDo />
+      {/* <WhatWeDo /> */}
       <FeaturedProjects />
-      <CTA/>
+      {/* <CTA/> */}
       <Testimonial />
       {/* <Footer /> */}
     </div>

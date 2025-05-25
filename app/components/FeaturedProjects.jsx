@@ -20,20 +20,20 @@ const FeaturedProjects = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     return (
-        <div className="relative px-20 py-16">
-            <h2 className="text-5xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">Featured Projects</h2>
+        <div className="relative px-8 py-6">
+            <h2 className="text-3xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">Featured Projects</h2>
 
             {/* Custom Navigation Buttons */}
-            <button ref={prevRef} className="absolute left-44 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
+            <button ref={prevRef} className="absolute left-8 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
                 <FaArrowAltCircleLeft />
             </button>
-            <button ref={nextRef} className="absolute right-44 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
+            <button ref={nextRef} className="absolute right-8 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
                 <FaArrowAltCircleRight />
             </button>
 
             <Swiper
-                slidesPerView={3}
-                spaceBetween={30}
+                // slidesPerView={3}
+                // spaceBetween={30}
                 // navigation={true} 
                 modules={[Navigation]}
                 onBeforeInit={(swiper) => {
@@ -57,6 +57,44 @@ const FeaturedProjects = () => {
             </Swiper>
         </div>
     );
+    // return (
+    //     <div className="relative px-20 py-16">
+    //         <h2 className="text-5xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">Featured Projects</h2>
+
+    //         {/* Custom Navigation Buttons */}
+    //         <button ref={prevRef} className="absolute left-44 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
+    //             <FaArrowAltCircleLeft />
+    //         </button>
+    //         <button ref={nextRef} className="absolute right-44 top-1/2 -translate-y-1/2 z-10 text-2xl font-bold text-[#F3692A]">
+    //             <FaArrowAltCircleRight />
+    //         </button>
+
+    //         <Swiper
+    //             slidesPerView={3}
+    //             spaceBetween={30}
+    //             // navigation={true} 
+    //             modules={[Navigation]}
+    //             onBeforeInit={(swiper) => {
+    //                 // @ts-ignore – Swiper's types don’t know about this override
+    //                 swiper.params.navigation.prevEl = prevRef.current;
+    //                 // @ts-ignore
+    //                 swiper.params.navigation.nextEl = nextRef.current;
+    //             }}
+    //             navigation={{
+    //                 prevEl: prevRef.current,
+    //                 nextEl: nextRef.current
+    //             }}
+    //             className="w-2/3 h-[350px] my-16"
+    //         >
+    //             <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject1} projectName="Royal Pacific Tower" location="Mohammadpur, Dhaka" /></SwiperSlide>
+    //             <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject2} projectName="Royal River Heaven" location="Dhaka" /></SwiperSlide>
+    //             <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject3} projectName="Abason" location="Aftab Nagor, Dhaka" /></SwiperSlide>
+    //             <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject4} projectName="Mannat Palace" location="Dhaka" /></SwiperSlide>
+    //             <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject5} projectName="Baki Palace" location="Jatrabari, Dhaka" /></SwiperSlide>
+    //             <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject6} projectName="Planet Housing" location="Kawla, Dhaka" /></SwiperSlide>
+    //         </Swiper>
+    //     </div>
+    // );
 };
 
 export default FeaturedProjects;
