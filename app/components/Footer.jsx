@@ -50,7 +50,10 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <p className="text-sm text-center mt-10">© 2025 ZB Engineering & Technology. All rights reserved.</p>
+            <div className="flex flex-col md:flex-row gap-1 md:gap-2 justify-center items-center mt-6">
+                <p className="text-sm text-center">© 2025 ZB Engineering & Technology.</p>
+                <p className="text-sm text-center"> All rights reserved.</p>
+            </div>
         </div>
     );
     // return (
