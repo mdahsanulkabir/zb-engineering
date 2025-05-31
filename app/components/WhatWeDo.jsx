@@ -21,13 +21,13 @@ const WhatWeDo = () => {
                     <Image
                         src={stockPhoto2}
                         alt="Photo by Roberto Nickson on Unsplash"
-                        className="absolute top-[20px] md:top-0 w-[200px] left-8 xl:left-[-100px] z-[-3] xl:z-[-1]"
+                        className="absolute top-[20px] md:top-0 w-[200px] left-8 xl:left-[-100px] z-[-3] xl:z-[-1] object-cover object-bottom h-[200px]"
                     />
                     <Image
                         src={stockPhoto1}
                         width={500}
                         alt="construction"
-                        className="absolute top-[-50px]  md:top-[-50px] left-2 md:left-0 md:right-5 z-[-1] xl:z-[-3]"
+                        className="absolute top-[-50px] md:top-[-50px] left-2 md:left-0 md:right-5 z-[-1] xl:z-[-3] object-cover object-bottom h-[150px]"
                     />
                 </div>
             </div>
