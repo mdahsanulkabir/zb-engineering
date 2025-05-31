@@ -8,6 +8,7 @@ import Link from "next/link";
 const Navbar = () => {
     const pathname = usePathname();
     return (
+        <>
         <div className="fixed top-0 left-0 w-full flex items-center justify-between px-8 py-4 bg-gray-800 text-white z-99">
             <div className="flex items-center space-x-5">
                 <Image
@@ -39,6 +40,8 @@ const Navbar = () => {
             </div>
             <div className="block md:hidden"><FaBars size={20}/></div>
         </div>
+        <div className="w-full h-[88px]"></div> {/* copensate for fixed navbar height */}
+        </>
     );
     // return (
     //     <div className="flex items-center justify-between px-20 py-8 bg-gray-800 text-white">
