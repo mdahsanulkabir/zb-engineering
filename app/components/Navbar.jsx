@@ -83,7 +83,7 @@ const Navbar = () => {
             </div>
 
             {/* Space for fixed navbar */}
-            <div className="w-full h-[88px] md:h-[80px]"></div>
+            <div className="w-full h-[80px] md:h-[80px]"></div>
         </>
     );
     // return (
