@@ -15,7 +15,7 @@ const Navbar = () => {
     const closeSidebar = () => setSidebarOpen(false);
     return (
         <>
-            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 bg-gray-800 text-white z-99">
+            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 bg-gray-800 text-white z-99 rounded-b-lg shadow-xl">
                 <div className="flex items-center space-x-5">
                     <Image
                         src={logo}

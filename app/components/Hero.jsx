@@ -38,10 +38,10 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-10">
-                        <button className="bg-[#F3692A] text-white px-6 py-3 rounded-full hover:bg-[#AA644A] transition duration-300">
+                        <button className="bg-[#F3692A] text-white px-6 py-3 rounded-full hover:bg-[#AA644A] drop-shadow-lg drop-shadow-amber-400 transition duration-300">
                             Our Services
                         </button>
-                        <button className="bg-white px-6 py-3 rounded-full hover:bg-[#AA644A] transition duration-300">
+                        <button className="bg-white px-6 py-3 rounded-full hover:bg-[#AA644A] drop-shadow-lg drop-shadow-gray-400 transition duration-300">
                             View Projects
                         </button>
                     </div>

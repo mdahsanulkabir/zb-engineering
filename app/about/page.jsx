@@ -4,13 +4,13 @@ import aboutImage from "../images/about.jpg";
 const page = () => {
     return (
         <div className="w-full px-4 sm:px-8 md:px-12 lg:px-20 py-6">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 md:flex-row ">
                 <Image
                     src={aboutImage}
                     // width={250}
                     // height={250}
                     alt="About Us Image"
-                    className="w-full h-auto min-[560px]:h-[200px] object-cover  min-[560px]:object-bottom rounded-lg shadow-2xl"
+                    className="w-full h-auto min-[560px]:h-[200px] md:h-full object-cover md:w-1/2 lg:w-2/5 min-[560px]:object-bottom rounded-lg shadow-2xl"
                 />
                 <div className="flex flex-col gap-6">
                     <div>
