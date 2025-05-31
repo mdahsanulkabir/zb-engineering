@@ -3,8 +3,8 @@ import StatElement from "./StatElement";
 
 const Stat = () => {
     return (
-        <div className="bg-[#6C6C6C]/10 w-full py-6 text-center px-8">
-            <div className="flex flex-col items-start justify-evenly gap-4">
+        <div className="bg-[#6C6C6C]/10 w-full py-12 text-center px-6 sm:px-8 md:px-16 lg:px-20">
+            <div className="flex flex-wrap xl:flex-nowrap gap-y-6 md:gap-y-8 xl:max-w-7xl xl:mx-auto">
                 <StatElement data="20+" description={<>Years of<br />Experience</>} />
                 <StatElement data="40+" description={<>Projects<br />Completed</>} />
                 <StatElement data="2M+" description={<>Square Feet Area<br />Were Built</>} />

@@ -15,7 +15,7 @@ const Navbar = () => {
     const closeSidebar = () => setSidebarOpen(false);
     return (
         <>
-            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-8 py-4 bg-gray-800 text-white z-99">
+            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 bg-gray-800 text-white z-99">
                 <div className="flex items-center space-x-5">
                     <Image
                         src={logo}
@@ -23,8 +23,36 @@ const Navbar = () => {
                         width={48}
                         height={48}
                     />
-                    <p className="font-bold text-xl">ZB Engineering & Technology</p>
+                    <p className="font-bold text-xl">ZB Engineering <br className="hidden min-[860px]:block min-[1065px]:hidden"/>& Technology</p>
                 </div>
+
+                {/* Desktop Nav */}
+                <ul className="hidden min-[860px]:flex items-center gap-6 font-semibold text-lg text-white">
+                    {["/", "/about", "/projects", "/services", "/contact"].map((href) => (
+                        <Link
+                            key={href}
+                            href={href}
+                            className={`hover:text-gray-400 cursor-pointer ${pathname === href ? "text-[#F3692A]" : ""
+                                }`}
+                        >
+                            {href === "/" ? "Home" : href.slice(1).charAt(0).toUpperCase() + href.slice(2)}
+                        </Link>
+                    ))}
+                    <li className="text-gray-400">|</li>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61561311471666"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-400"
+                    >
+                        <FaFacebook size={24} />
+                    </a>
+                    <Link href="#" className="hover:text-gray-400">
+                        <FaLinkedin size={24} />
+                    </Link>
+                </ul>
+
+                {/* mobile sidebar */}
                 {
                     sidebarOpen && (
                         <div className="fixed top-4 right-0 w-[250px] h-7/8 backdrop-blur-md shadow-[-10px_0px_10px_rgb(0,0,0)]/50 bg-white/10 shadow-gray-400 z-50 md:static md:block rounded-lg">
@@ -51,10 +79,10 @@ const Navbar = () => {
                         </div>
                     )
                 }
-                <button onClick={() => toggleSidebar()} className="block md:hidden"><FaBars size={20} /></button>
+                <button onClick={() => toggleSidebar()} className="block min-[860px]:hidden"><FaBars size={20} /></button>
             </div>
 
-            {/* Spacer for fixed navbar */}
+            {/* Space for fixed navbar */}
             <div className="w-full h-[88px] md:h-[80px]"></div>
         </>
     );

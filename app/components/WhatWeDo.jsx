@@ -6,10 +6,10 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const WhatWeDo = () => {
     return (
-        <div className="relative w-full px-8 py-6 bg-[#135120]/8">
+        <div className="relative w-full px-4 sm:px-8 md:px-12 lg:px-20 py-6 bg-[#135120]/8">
             <h2 className="text-3xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">What we do</h2>
             <div className="flex justify-center pt-6">
-                <ul className="w-1/2 text-sm">
+                <ul className="w-1/2 text-sm min-[480px]:text-base sm:text-lg">
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Rajuk Plan Approval</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Civil Works Construction</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>MEP Drawing, Design and Installation</li>
@@ -20,15 +20,14 @@ const WhatWeDo = () => {
                 <div className="relative w-1/2">
                     <Image
                         src={stockPhoto2}
-                        width={200}
                         alt="Photo by Roberto Nickson on Unsplash"
-                        className="absolute top-[20px] left-8 z-[-3]"
+                        className="absolute top-[20px] md:top-0 w-[200px] left-8 xl:left-[-100px] z-[-3] xl:z-[-1]"
                     />
                     <Image
                         src={stockPhoto1}
                         width={500}
                         alt="construction"
-                        className="absolute top-[-10px] left-2 z-[-1]"
+                        className="absolute top-[-50px]  md:top-[-50px] left-2 md:left-0 md:right-5 z-[-1] xl:z-[-3]"
                     />
                 </div>
             </div>
