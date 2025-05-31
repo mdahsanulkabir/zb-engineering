@@ -1,5 +1,5 @@
 'use client';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,6 +14,7 @@ import featureProject5 from '../images/featureProjects/Baki Bhai Zatrabari-2.jpg
 import featureProject6 from '../images/featureProjects/Planet Housing Back Side View Kawla .jpg'
 
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import Link from 'next/link';
 
 
 const FeaturedProjects = () => {
@@ -69,6 +70,11 @@ const FeaturedProjects = () => {
                 <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject5} projectName="Baki Palace" location="Jatrabari, Dhaka" /></SwiperSlide>
                 <SwiperSlide className='.swiper-slide'><FeatureCard cardImage={featureProject6} projectName="Planet Housing" location="Kawla, Dhaka" /></SwiperSlide>
             </Swiper>
+            <div className="text-center">
+                <Link href="/projects" className="text-[#FF7420] font-medium text-md underline cursor-pointer">
+                    Show all projects
+                </Link>
+            </div>
         </div>
     );
 };
