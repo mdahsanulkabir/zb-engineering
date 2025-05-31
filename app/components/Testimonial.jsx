@@ -17,8 +17,8 @@ const Testimonial = () => {
                 </div>
                 <div className="">
                     <p className="text-lg">MR JAMAN AND HIS FAMILY</p>
-                    <p className="text-md text-[#6c6c6c]">Flat owner of Kaderia Palace, Lalbag, Dhaka</p>
-                    <p className="text-lg pt-6 text-justify">We had a fantastic experience with ZB Engineering and Technology. From start to end, the whole process was very efficient and professional. Their construction quality is very good and they always adhere to their commitment. They helped us find the home we always desired for.</p>
+                    <p className="text-sm text-[#6c6c6c]">Flat owner of Kaderia Palace, Lalbag, Dhaka</p>
+                    <p className="text-base pt-6 text-justify">We had a fantastic experience with ZB Engineering and Technology. From start to end, the whole process was very efficient and professional. Their construction quality is very good and they always adhere to their commitment. They helped us find the home we always desired for.</p>
                 </div>
             </div>
             <hr className="text-gray-400"/>
@@ -32,8 +32,8 @@ const Testimonial = () => {
                 </div>
                 <div className="">
                     <p className="text-lg">MR RAFIQUE AND HIS FAMILY</p>
-                    <p className="text-md text-[#6c6c6c]">Flat owner of Planet Housing, Kawla, Dhaka</p>
-                    <p className="text-lg pt-6 text-justify">We couldn't find a better product than of ZB Engineering and Technology, and the total home ownership procedure was very simple. We are satisfied with the service and the flat is serving our purpose very well. And we believe Anwar Landmark will emerge as an elite developer company in the country.</p>
+                    <p className="text-sm text-[#6c6c6c]">Flat owner of Planet Housing, Kawla, Dhaka</p>
+                    <p className="text-base pt-6 text-justify">We couldn't find a better product than of ZB Engineering and Technology, and the total home ownership procedure was very simple. We are satisfied with the service and the flat is serving our purpose very well. And we believe Anwar Landmark will emerge as an elite developer company in the country.</p>
                 </div>
             </div>
             <p className="text-[#FF7420] font-medium text-md underline">More Testimonials...</p>

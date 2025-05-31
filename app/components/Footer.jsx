@@ -12,15 +12,15 @@ const Footer = () => {
                     width={32}
                     height={32}
                 />
-                <p className="text-md font-bold">ZB Engineering & Technology</p>
+                <p className="text-lg font-bold">ZB Engineering & Technology</p>
             </div>
             <div className="flex flex-col md:flex-row justify-between items-start mt-5">
                 <div className="w-full md:w-1/3 pb-6">
-                    <p className="text-lg font-bold py-2 text-justify">About</p>
+                    <p className="text-base font-bold py-2 text-justify">About</p>
                     <p>We have the confidence to provide the best service for you, with the support of Professional and Certified HR that we currently have and the high-quality materials we use and structured work techniques, we will be able to realize timely completion of work.</p>
                 </div>
                 <div className="w-full md:w-1/3 pb-6">
-                    <p className="text-lg font-bold py-2">Office</p>
+                    <p className="text-base font-bold py-2">Office</p>
                     <address>
                     Islam Mansion <br />
                     House - 38, Road - 03, Block - E<br />
@@ -29,7 +29,7 @@ const Footer = () => {
                     </address>
                 </div>
                 <div className="w-full md:w-1/3">
-                    <p className="text-lg font-bold py-2">Contact</p>
+                    <p className="text-base font-bold py-2">Contact</p>
                     <ul className="flex flex-col gap-2">
                         <li className="flex items-center gap-2">
                             <FaPhoneAlt />

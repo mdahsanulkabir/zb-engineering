@@ -9,13 +9,13 @@ const WhatWeDo = () => {
         <div className="relative w-full px-8 py-6 bg-[#135120]/8">
             <h2 className="text-3xl font-medium underline decoration-[#F3692A] decoration-4 underline-offset-8">What we do</h2>
             <div className="flex justify-center pt-6">
-                <ul className="w-1/2 text-lg">
-                    <li className="flex items-baseline gap-2 text-sm"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Rajuk Plan Approval</li>
-                    <li className="flex items-baseline gap-2 text-sm"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Civil Works Construction</li>
-                    <li className="flex items-baseline gap-2 text-sm"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>MEP Drawing, Design and Installation</li>
-                    <li className="flex items-baseline gap-2 text-sm"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Engineering Consultancy</li>
-                    <li className="flex items-baseline gap-2 text-sm"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Architectrual Drawing</li>
-                    <li className="flex items-baseline gap-2 text-sm"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Interior and Exterior Decoration Works</li>
+                <ul className="w-1/2 text-sm">
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Rajuk Plan Approval</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Civil Works Construction</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>MEP Drawing, Design and Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Engineering Consultancy</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Architectrual Drawing</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Interior and Exterior Decoration Works</li>
                 </ul>
                 <div className="relative w-1/2">
                     <Image
