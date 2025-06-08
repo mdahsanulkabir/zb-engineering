@@ -41,3 +41,68 @@
   height: 100%;
   object-fit: cover;
 }
+
+
+/* ######### project page ######### */
+
+.project-filter-container {
+  @apply 
+    flex flex-col gap-4 
+    max-w-[340px] 
+    mx-auto
+    min-[700px]:flex-row 
+    min-[700px]:flex-wrap 
+    /* min-[700px]:mx-0 */
+    min-[700px]:max-w-[500px]
+    min-[900px]:max-w-[800px]
+    min-[900px]:gap-0
+    items-center justify-between 
+    bg-orange-100 p-4 rounded-md 
+}
+
+.project-filter-container .project-filter {
+  @apply 
+    flex flex-col 
+    max-w-[300px]
+    min-[530px]:flex-row 
+    min-[700px]:flex-col 
+    min-[700px]:w-[220px]
+    min-[900px]:w-[180px]
+    gap-2 items-start 
+    bg-[#F3692A]/10 p-4 rounded-lg shadow-sm shadow-gray-400 
+    /* w-full  */
+    /* min-[700px]:w-[280px] */
+    
+}
+
+.project-filter-container .project-filter label {
+  @apply 
+    text-sm font-semibold text-gray-700
+}
+
+.project-filter-container .project-filter select {
+  @apply 
+    text-sm text-gray-700
+
+    max-[700px]:w-[280px]
+    w-full
+     border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#F3692A] 
+}
+
+.project-filter-container .project-filter-search-container {
+  @apply flex justify-center items-center w-full min-[700px]:w-[220px] min-[900px]:w-[120px]
+}
+
+.project-filter-container .project-filter-search-container button {
+  @apply bg-[#F3692A] px-4 py-2 w-[150px] rounded-full text-white ring-1 ring-green-500 drop-shadow-lg drop-shadow-amber-600 focus:ring-0
+}
+
+.project .project-cards-container {
+  @apply 
+    flex flex-col 
+    md:flex-row 
+    flex-wrap justify-center items-center gap-8 mt-6
+    mx-auto
+}
+
+/* ######### contact page ######### */

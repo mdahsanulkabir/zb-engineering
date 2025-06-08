@@ -23,7 +23,7 @@ const Navbar = () => {
                         width={48}
                         height={48}
                     />
-                    <p className="font-bold text-xl">ZB Engineering <br className="hidden min-[860px]:block min-[1065px]:hidden"/>& Technology</p>
+                    <p className="font-bold text-xl">ZB Engineering <br className="hidden min-[860px]:block min-[1065px]:hidden" />& Technology</p>
                 </div>
 
                 {/* Desktop Nav */}
@@ -32,7 +32,7 @@ const Navbar = () => {
                         <Link
                             key={href}
                             href={href}
-                            className={`hover:text-gray-400 cursor-pointer ${pathname === href ? "text-[#F3692A]" : ""
+                            className={`hover:text-gray-400 cursor-pointer transition-colors duration-300 ${pathname === href ? "text-[#F3692A]" : ""
                                 }`}
                         >
                             {href === "/" ? "Home" : href.slice(1).charAt(0).toUpperCase() + href.slice(2)}
@@ -43,11 +43,11 @@ const Navbar = () => {
                         href="https://www.facebook.com/profile.php?id=61561311471666"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-gray-400"
+                        className="hover:text-gray-400 cursor-pointer transition-colors duration-300"
                     >
                         <FaFacebook size={24} />
                     </a>
-                    <Link href="#" className="hover:text-gray-400">
+                    <Link href="#" className="hover:text-gray-400 cursor-pointer transition-colors duration-300">
                         <FaLinkedin size={24} />
                     </Link>
                 </ul>
@@ -55,7 +55,8 @@ const Navbar = () => {
                 {/* mobile sidebar */}
                 {
                     sidebarOpen && (
-                        <div className="fixed top-4 right-0 w-[250px] h-7/8 backdrop-blur-md shadow-[-10px_0px_10px_rgb(0,0,0)]/50 bg-white/10 shadow-gray-400 z-50 md:static md:block rounded-lg">
+                        <div 
+                            className={`fixed top-4 right-0 w-[250px] h-7/8 backdrop-blur-md shadow-[-10px_0px_10px_rgb(0,0,0)]/50 bg-white/10 shadow-gray-400 z-50 rounded-lg transform transition-transform duration-300 ease-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} block min-[860px]:hidden`}>
                             <div className="flex justify-end p-4">
                                 <AiOutlineClose onClick={closeSidebar} className="cursor-pointer" size={24} />
                             </div>
@@ -83,7 +84,9 @@ const Navbar = () => {
             </div>
 
             {/* Space for fixed navbar */}
-            <div className="w-full h-[80px]"></div>
+            {
+                pathname !== "/" && (<div className="w-full h-[80px]"></div>)
+            }
         </>
     );
     // return (
