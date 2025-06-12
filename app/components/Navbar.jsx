@@ -15,7 +15,7 @@ const Navbar = () => {
     const closeSidebar = () => setSidebarOpen(false);
     return (
         <>
-            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 bg-gray-800 text-white z-99 rounded-b-lg shadow-xl">
+            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 bg-gray-800 text-white z-49 rounded-b-lg shadow-xl">
                 <div className="flex items-center space-x-5">
                     <Image
                         src={logo}
@@ -56,7 +56,7 @@ const Navbar = () => {
                 {
                     sidebarOpen && (
                         <div 
-                            className={`fixed top-4 right-0 w-[250px] h-7/8 backdrop-blur-md shadow-[-10px_0px_10px_rgb(0,0,0)]/50 bg-white/10 shadow-gray-400 z-50 rounded-lg transform transition-transform duration-300 ease-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} block min-[860px]:hidden`}>
+                            className={`fixed top-4 right-0 w-[250px] h-7/8 backdrop-blur-md shadow-[-10px_0px_10px_rgb(0,0,0)]/50 bg-white/10 shadow-gray-400 z-49 rounded-lg transform transition-transform duration-300 ease-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} block min-[860px]:hidden`}>
                             <div className="flex justify-end p-4">
                                 <AiOutlineClose onClick={closeSidebar} className="cursor-pointer" size={24} />
                             </div>
