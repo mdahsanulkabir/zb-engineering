@@ -33,13 +33,13 @@ const page = () => {
                     {/* <div className="flex flex-col gap-4"> */}
                     {/* <h4 className="text-base md:text-xl font-bold underline decoration-[#F3692A] underline-offset-3 place-self-start">Email</h4> */}
                     <div className="flex items-center gap-4 ">
-                        <FaEnvelope size={24} /><span><email>info@zbengineeering.com</email></span>
+                        <FaEnvelope size={24} /><span>info@zbengineeering.com</span>
                     </div>
                     {/* </div> */}
                     {/* <div className="flex flex-col gap-4"> */}
                     {/* <h4 className="text-base md:text-xl font-bold underline decoration-[#F3692A] underline-offset-3 place-self-start">Phone</h4> */}
                     <div className="flex items-center gap-4 ">
-                        <FaPhoneAlt size={24} /><span>+880 123 456 7890</span>
+                        <FaPhoneAlt size={24} /><span>+880 171 309 2052</span>
                     </div>
                     {/* </div> */}
                 </div>
@@ -49,13 +49,13 @@ const page = () => {
                 className="flex flex-col gap-10 items-center justify-center w-full mx-auto bg-white p-6 rounded-lg shadow-lg mt-8
                 xl:flex-row xl:justify-between xl:items-start xl:max-w-6xl">
                 <div className="w-full">
-                    <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Get in Touch</h1>
+                    <h2 className="text-3xl w-full text-center font-bold text-amber-600 mb-6">Get in Touch</h2>
                     <p className="text-gray-600 mb-6">We would love to hear from you! Whether you have a question about our services, need assistance, or just want to say hello, feel free to reach out. One of our expert sales manager will get back to you as soon as possible.</p>
                     <ContactForm />
                 </div>
 
                 <div className="w-full max-w-4xl mx-auto mt-8 xl:mt-0">
-                    <h1 className="text-3xl w-full text-center font-bold text-amber-600 mb-6">Our Office Location</h1>
+                    <h2 className="text-3xl w-full text-center font-bold text-amber-600 mb-6">Our Office Location</h2>
                     <div className="w-full mx-auto h-[500px] rounded-lg overflow-hidden shadow-lg">
                         <iframe
                             title="ZBET Office Map"
