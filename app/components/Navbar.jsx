@@ -43,12 +43,12 @@ const Navbar = () => {
                         href="https://www.facebook.com/profile.php?id=61561311471666"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-gray-400 cursor-pointer transition-colors duration-300"
+                        className=" cursor-pointer transition-colors duration-300 hover:scale-[1.1]"
                     >
-                        <FaFacebook size={24} />
+                        <FaFacebook size={24} className="hover:text-[#0866FF] hover:bg-white  rounded-full hover:scale-[1.1] hover:ring hover:ring-[#F3692A]"/>
                     </a>
-                    <Link href="#" className="hover:text-gray-400 cursor-pointer transition-colors duration-300">
-                        <FaLinkedin size={24} />
+                    <Link href="#" className="hover:text-gray-400 cursor-pointer transition-colors duration-300 hover:scale-[1.1] ">
+                        <FaLinkedin size={24} className="hover:text-[#0A66C2] hover:bg-white hover:scale-[1.1] hover:ring hover:ring-[#F3692A] hover:rounded-[2px]"/>
                     </Link>
                 </ul>
 

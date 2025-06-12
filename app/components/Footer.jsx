@@ -44,7 +44,7 @@ const Footer = () => {
                         <p className="text-base font-bold mb-2">Contact</p>
                         <ul className="flex flex-col gap-2 text-sm">
                             <li className="flex items-center gap-2">
-                                <FaPhoneAlt /> <span>+123 456 7890</span>
+                                <FaPhoneAlt /> <span>+880 171 309 2052</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaFacebook /> <span>facebook.com/zbet</span>

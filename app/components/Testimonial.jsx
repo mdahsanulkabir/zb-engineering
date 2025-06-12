@@ -23,10 +23,7 @@ const Testimonial = () => {
                     <p className="text-xl font-semibold">MR JAMAN AND HIS FAMILY</p>
                     <p className="text-sm text-[#6c6c6c] mb-4">Flat owner of Kaderia Palace, Lalbag, Dhaka</p>
                     <p className="text-base text-justify">
-                        We had a fantastic experience with ZB Engineering and Technology.
-                        From start to end, the whole process was very efficient and professional.
-                        Their construction quality is very good and they always adhere to their commitment.
-                        They helped us find the home we always desired for.
+                        We had a fantastic experience with ZB Engineering and Technology. From start to end, the whole process was very efficient and professional. Their construction quality is very good and they always adhere to their commitment. They helped us find the home we always desired for.
                     </p>
                 </div>
             </div>
@@ -46,16 +43,13 @@ const Testimonial = () => {
                     <p className="text-xl font-semibold">MR RAFIQUE AND HIS FAMILY</p>
                     <p className="text-sm text-[#6c6c6c] mb-4">Flat owner of Planet Housing, Kawla, Dhaka</p>
                     <p className="text-base text-justify">
-                        We couldn't find a better product than of ZB Engineering and Technology,
-                        and the total home ownership procedure was very simple. We are satisfied with the service
-                        and the flat is serving our purpose very well. And we believe ZB Engineering will emerge
-                        as an elite developer company in the country.
+                        We couldn't find a better product than of ZB Engineering and Technology, and the total home ownership procedure was very simple. We are satisfied with the service and the flat is serving our purpose very well. And we believe ZB Engineering will emerge as an elite developer company in the country.
                     </p>
                 </div>
             </div>
 
-            <div className="text-center">
-                <p className="text-[#FF7420] font-medium text-md underline cursor-pointer">
+            <div className="flex justify-center items-center">
+                <p className="text-[#FF7420] font-medium text-md underline cursor-pointer px-2 mx-auto">
                     More Testimonials...
                 </p>
             </div>
