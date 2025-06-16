@@ -7,7 +7,8 @@ const FeatureCard = ({cardImage, projectName, location}) => {
             <Image
                 src={cardImage}
                 alt="Featured Project 1"
-                className="object-cover rounded-lg h-[350px]!"
+                className="object-fit rounded-lg"
+                // className="object-cover rounded-lg h-[350px]!"
             />
             <div className="absolute w-full h-[350px] pointer-events-none z-20 rounded-b-lg" style={{ background: `linear-gradient(to top, rgba(17, 17, 17, 0.8) 10%, rgba(17, 17, 17, 0.5) 15%, rgba(17, 17, 17, 0) 20%)` }}>
                 <div className="absolute bottom-2 left-0 right-0">

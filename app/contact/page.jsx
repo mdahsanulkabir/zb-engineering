@@ -12,7 +12,7 @@ const page = () => {
                 <div className="flex flex-col gap-4">
                     <h4 className="text-base md:text-xl font-bold underline decoration-[#F3692A] underline-offset-3 place-self-start">Office</h4>
                     <address className="not-italic leading-relaxed place-self-start">
-                        Islam Mansion<br />
+                        Fozia Mansion<br />
                         House - 38, Road - 03, Block - E<br />
                         Banasree, Rampura<br />
                         Dhaka - 1219
@@ -65,7 +65,8 @@ const page = () => {
                             style={{ border: 0 }}
                             allowFullScreen
                             referrerPolicy="no-referrer-when-downgrade"
-                            src="https://www.google.com/maps?q=ZB+Engineering+&+Technology,+Dhaka&output=embed"
+                            src="https://www.google.com/maps?q=23.761444,90.435528&output=embed"
+                            // src="https://www.google.com/maps?q=ZB+Engineering+&+Technology,+Dhaka&output=embed"
                         ></iframe>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ const Footer = () => {
                     <div>
                         <p className="text-base font-bold mb-2">Office</p>
                         <address className="not-italic text-sm leading-relaxed">
-                            Islam Mansion<br />
+                            Fozia Mansion<br />
                             House - 38, Road - 03, Block - E<br />
                             Banasree, Rampura<br />
                             Dhaka - 1219

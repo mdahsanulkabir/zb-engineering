@@ -9,12 +9,14 @@ const FilterContainer = () => {
                 <label htmlFor="category" className="">Category</label>
                 <select name="category" id="category">
                     <option value="" className="text-center">--Select category--</option>
-                    <option value="rajuk-plan">Rajuk Plan Approval</option>
-                    <option value="civil-works">Civil Works Construction</option>
-                    <option value="mep">MEP Drawing and Design</option>
-                    <option value="consultancy">Consultancy</option>
-                    <option value="arch-drawing">Architectural Drawing</option>
-                    <option value="interior">Interior Decoration</option>
+                    <option value="1">Rajuk Plan Approval</option>
+                    <option value="2">Structural Design</option>
+                    <option value="3">Architectural Design</option>
+                    <option value="4">MEP Drawing and Design</option>
+                    <option value="5">Consultancy</option>
+                    <option value="6">Civil Works Construction</option>
+                    <option value="7">PFSS Construction</option>
+                    <option value="8">Interior Decoration</option>
                 </select>
             </div>
             {/* stage filter */}
@@ -35,7 +37,7 @@ const FilterContainer = () => {
                     <option value="dhaka">Dhaka</option>
                     <option value="Pabna">Pabna</option>
                     <option value="Kustia">Kustia</option>
-                    <option value="Barishal">Kustia</option>
+                    <option value="Barishal">Barishal</option>
                 </select>
             </div>
             <div className="project-filter-search-container">

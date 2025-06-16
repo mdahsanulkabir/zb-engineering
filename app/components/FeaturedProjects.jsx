@@ -6,13 +6,13 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
 import FeatureCard from './FeatureCard';
-// ... (your image imports)
-import featureProject1 from '../images/featureProjects/Royal Pacific  Tower 3D View -01 Chandrima Housing .jpeg'
-import featureProject2 from '../images/featureProjects/River Heaven 3D-02.jpg'
-import featureProject3 from '../images/featureProjects/FINAL RENDER-1.jpg'
-import featureProject4 from '../images/featureProjects/3d-4.jpg'
-import featureProject5 from '../images/featureProjects/Baki Bhai Zatrabari-2.jpg'
-import featureProject6 from '../images/featureProjects/Planet Housing Back Side View Kawla .jpg'
+
+import featureProject1 from '../images/projects/011 royal-pacific-tower-mohammadpur.jpeg'
+import featureProject2 from '../images/projects/009 river-heaven-mohammadpur.jpg'
+import featureProject3 from '../images/projects/001 abason-abtabnagar.jpg'
+import featureProject4 from '../images/projects/006 mannat-palace-mohammadpur.jpg'
+import featureProject5 from '../images/projects/013 baki-house-jatrabari.jpg'
+import featureProject6 from '../images/projects/017 planet-housing-kawla.jpg'
 
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import Link from 'next/link';
