@@ -150,9 +150,17 @@ const page = () => {
                                             <p className="text-gray-700">{firstLetterToUpperCase(selectedProject.category)}</p>
                                         </div>
                                         <div className="grid grid-cols-2 gap-1 border-b border-gray-300 lg:p-2">
-                                            <p className="text-gray-700"><strong>Floors:</strong></p>
-                                            <p className="text-gray-700">{(selectedProject.noOfFloors)}</p>
+                                            <p className="text-gray-700"><strong>{selectedProject?.serviceType[0] === 8 ? "Floor Space:" : "Land Area"}</strong></p>
+                                            <p className="text-gray-700">{firstLetterToUpperCase(selectedProject.landArea)}</p>
                                         </div>
+                                        {
+                                            selectedProject?.noOfFloors && (
+                                                <div className="grid grid-cols-2 gap-1 border-b border-gray-300 lg:p-2">
+                                                    <p className="text-gray-700"><strong>Floors:</strong></p>
+                                                    <p className="text-gray-700">{(selectedProject.noOfFloors)}</p>
+                                                </div>
+                                            )
+                                        }
                                         <div className="grid grid-cols-2 border-b border-gray-300 lg:p-2">
                                             <p className="text-gray-700 max-[470px]:col-span-2"><strong>Service Provided:</strong></p>
                                             <div className="max-[470px]:col-span-2 max-[470px]:pl-16">
