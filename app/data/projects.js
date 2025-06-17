@@ -124,7 +124,7 @@ export const projects = [
         holdingAddress: "",
         location: ["Khoksha"],
         district: "Kushtia",
-        image: "/images/projects/008 sree-sree-kali-puja-mondir-kushtia.jpg",
+        image: "/images/projects/008 sree-sree-kali-puja-mondir-kushtia01.jpg",
         landArea: "250 Katha",
         noOfFloors: "G+2",
         serviceType: [1,2,3,4,5],
