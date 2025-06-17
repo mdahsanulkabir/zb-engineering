@@ -93,7 +93,7 @@ const page = () => {
             {/* Modal/Dialog */}
             {selectedProject && (
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center overflow-x-auto"
+                    className="fixed inset-0 z-50 flex items-center justify-center"
                     style={{
                         fontFamily: "'Roboto', Arial, sans-serif",
                         background: "rgba(17,17,17,0.6)",
@@ -105,6 +105,7 @@ const page = () => {
                         className="relative bg-white rounded-lg shadow-2xl overflow-auto 
                         w-[calc(60vw - 40px)] 
                         h-[calc(100vh - 80px)]
+                        min-lg:min-w-[800px]
                         "
                         style={{
                             // width: "calc(50vw - 40px)",
@@ -122,49 +123,51 @@ const page = () => {
                         </button>
                         {/* Project Details */}
                         <div className="p-4 mt-8 flex flex-col items-center lg:flex-row lg:gap-6">
-                            <div className="lg:w-1/2 lg:flex lg:justify-center">
-                                <div className="shadow-lg shadow-gray-400 mb-6 rounded-lg">
-                                    <Image
-                                        src={selectedProject.image}
-                                        alt={selectedProject.name}
-                                        width={300}
-                                        height={400}
-                                        className="object-cover rounded-lg "
-                                    />
+                            <div className="lg:w-2/5 lg:flex lg:flex-col lg:items-center">
+                                <div className="lg:flex lg:justify-center">
+                                    <div className="shadow-lg shadow-gray-400 mb-6 rounded-lg">
+                                        <Image
+                                            src={selectedProject.image}
+                                            alt={selectedProject.name}
+                                            width={200}
+                                            height={266}
+                                            className="object-cover rounded-lg "
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="lg:w-1/2">
                                 <div className="flex flex-col gap-1 mb-4 justify-center items-center">
                                     <h3 className="text-2xl font-semibold ">{selectedProject.name}</h3>
                                     <p className="text-gray-600">{`${selectedProject.location[selectedProject.location.length - 1]}, ${selectedProject.district}`}</p>
                                 </div>
-
-                                <div className="border-t border-gray-300 w-full">
+                            </div>
+                            <div className="lg:w-3/5">
+                                <div className="w-full">
                                     <div>
-                                        <h4 className="text-lg flex justify-center font-semibold mb-2 underline decoration-[#F3692A] decoration-2 underline-offset-2">Project Details</h4>
+                                        <h4 className="text-lg flex justify-center font-semibold mb-2 underline decoration-[#F3692A] decoration-2 underline-offset-2 ">Project Details</h4>
                                         {/* <p className="text-gray-700 mb-2">{selectedProject.description}</p> */}
-                                        <div className="grid grid-cols-2 gap-1">
-
+                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 p-2">
                                             <p className="text-gray-700"><strong>Category:</strong></p>
                                             <p className="text-gray-700">{firstLetterToUpperCase(selectedProject.category)}</p>
-
-
+                                        </div>
+                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 p-2">
                                             <p className="text-gray-700"><strong>Floors:</strong></p>
                                             <p className="text-gray-700">{(selectedProject.noOfFloors)}</p>
-
-
-                                            <p className="text-gray-700"><strong>Service Provided:</strong></p>
-                                            <div>
+                                        </div>
+                                        <div className="grid grid-cols-2 border-b border-gray-300 p-2">
+                                            <p className="text-gray-700 max-[470px]:col-span-2"><strong>Service Provided:</strong></p>
+                                            <div className="max-[470px]:col-span-2 max-[470px]:pl-16">
                                                 {selectedProject.serviceType.map((service, idx) => (
                                                     <p key={idx} className="text-gray-700">{services[service]}</p>
                                                 ))}
                                             </div>
-
+                                        </div>
+                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 p-2">
                                             <p className="text-gray-700"><strong>Stage:</strong></p>
-                                            <p  className="text-gray-700">{firstLetterToUpperCase(selectedProject.stage)}</p>
-                                            
+                                            <p className="text-gray-700">{firstLetterToUpperCase(selectedProject.stage)}</p>
+                                        </div>
+                                        <div className="grid grid-cols-2 gap-1 p-2">
                                             <p className="text-gray-700"><strong>{selectedProject.stage === 'completed' ? "Completed On:" : "Expected Completion On:"}</strong></p>
-                                            <p className="text-gray-700">{formatDate(selectedProject.stageDate)}</p>
+                                            <p className="text-gray-700 mt-auto">{formatDate(selectedProject.stageDate)}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -172,8 +175,9 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 
