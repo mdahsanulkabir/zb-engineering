@@ -93,7 +93,7 @@ const page = () => {
             {/* Modal/Dialog */}
             {selectedProject && (
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center"
+                    className="fixed inset-0 z-50 flex items-center justify-center overflow-x-auto"
                     style={{
                         fontFamily: "'Roboto', Arial, sans-serif",
                         background: "rgba(17,17,17,0.6)",
@@ -102,10 +102,13 @@ const page = () => {
                 >
                     {/* Modal content with 40px margin */}
                     <div
-                        className="relative bg-white rounded-lg shadow-2xl overflow-auto"
+                        className="relative bg-white rounded-lg shadow-2xl overflow-auto 
+                        w-[calc(60vw - 40px)] 
+                        h-[calc(100vh - 80px)]
+                        "
                         style={{
-                            width: "calc(100vw - 40px)",
-                            height: "calc(100vh - 80px)",
+                            // width: "calc(50vw - 40px)",
+                            // height: "calc(100vh - 80px)",
                             margin: "40px 20px 40px 20px",
                             boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
                         }}
@@ -118,26 +121,52 @@ const page = () => {
                             Close &times;
                         </button>
                         {/* Project Details */}
-                        <div className="p-4 mt-8 flex flex-col items-center">
-                            <Image
-                                src={selectedProject.image}
-                                alt={selectedProject.name}
-                                width={200}
-                                height={266}
-                                className="rounded-lg mb-6 object-cover shadow-lg shadow-gray-400"
-                            />
-                            <h3 className="text-2xl font-semibold mb-2 ">{selectedProject.name}</h3>
-                            <p className="text-gray-600 mb-2">{`${selectedProject.location[selectedProject.location.length - 1]}, ${selectedProject.district}`}</p>
+                        <div className="p-4 mt-8 flex flex-col items-center lg:flex-row lg:gap-6">
+                            <div className="lg:w-1/2 lg:flex lg:justify-center">
+                                <div className="shadow-lg shadow-gray-400 mb-6 rounded-lg">
+                                    <Image
+                                        src={selectedProject.image}
+                                        alt={selectedProject.name}
+                                        width={300}
+                                        height={400}
+                                        className="object-cover rounded-lg "
+                                    />
+                                </div>
+                            </div>
+                            <div className="lg:w-1/2">
+                                <div className="flex flex-col gap-1 mb-4 justify-center items-center">
+                                    <h3 className="text-2xl font-semibold ">{selectedProject.name}</h3>
+                                    <p className="text-gray-600">{`${selectedProject.location[selectedProject.location.length - 1]}, ${selectedProject.district}`}</p>
+                                </div>
 
-                            <div className="border border-gray-300 w-full">
-                                <div className="p-4">
-                                    <h4 className="text-lg flex justify-center font-semibold mb-2 underline decoration-[#F3692A] decoration-2 underline-offset-2">Project Details</h4>
-                                    {/* <p className="text-gray-700 mb-2">{selectedProject.description}</p> */}
-                                    <p className="text-gray-700 mb-2"><strong>Category:</strong>{firstLetterToUpperCase(selectedProject.category)}</p>
-                                    <p className="text-gray-700 mb-2"><strong>Floors:</strong>{(selectedProject.noOfFloors)}</p>
-                                    <p className="text-gray-700 mb-2"><strong>Service Provided:</strong>{selectedProject.serviceType.map(service => services[service]).join(', ')}</p>
-                                    <p className="text-gray-700 mb-2"><strong>Stage:</strong>{firstLetterToUpperCase(selectedProject.stage)}</p>
-                                    <p className="text-gray-700 mb-2"><strong>{selectedProject.stage === 'completed' ? "Completed On:" : "Expected Completion On:"}</strong>{formatDate(selectedProject.stageDate)}</p>
+                                <div className="border-t border-gray-300 w-full">
+                                    <div>
+                                        <h4 className="text-lg flex justify-center font-semibold mb-2 underline decoration-[#F3692A] decoration-2 underline-offset-2">Project Details</h4>
+                                        {/* <p className="text-gray-700 mb-2">{selectedProject.description}</p> */}
+                                        <div className="grid grid-cols-2 gap-1">
+
+                                            <p className="text-gray-700"><strong>Category:</strong></p>
+                                            <p className="text-gray-700">{firstLetterToUpperCase(selectedProject.category)}</p>
+
+
+                                            <p className="text-gray-700"><strong>Floors:</strong></p>
+                                            <p className="text-gray-700">{(selectedProject.noOfFloors)}</p>
+
+
+                                            <p className="text-gray-700"><strong>Service Provided:</strong></p>
+                                            <div>
+                                                {selectedProject.serviceType.map((service, idx) => (
+                                                    <p key={idx} className="text-gray-700">{services[service]}</p>
+                                                ))}
+                                            </div>
+
+                                            <p className="text-gray-700"><strong>Stage:</strong></p>
+                                            <p  className="text-gray-700">{firstLetterToUpperCase(selectedProject.stage)}</p>
+                                            
+                                            <p className="text-gray-700"><strong>{selectedProject.stage === 'completed' ? "Completed On:" : "Expected Completion On:"}</strong></p>
+                                            <p className="text-gray-700">{formatDate(selectedProject.stageDate)}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
