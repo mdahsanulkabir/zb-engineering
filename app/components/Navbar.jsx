@@ -1,14 +1,16 @@
 "use client";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import logo from "../images/logo.svg";
 import { FaFacebook, FaLinkedin, FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import { useState } from "react";
 
+
 const Navbar = () => {
     const pathname = usePathname();
+    const router = useRouter();
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     const toggleSidebar = () => setSidebarOpen((prev) => !prev);
@@ -16,7 +18,7 @@ const Navbar = () => {
     return (
         <>
             <div className="fixed top-0 left-0 w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 py-4 bg-gray-800 text-white z-49 rounded-b-lg shadow-xl">
-                <div className="flex items-center space-x-5">
+                <div className="flex items-center space-x-5 cursor-pointer" onClick={() => router.push('/')} >
                     <Image
                         src={logo}
                         alt="ZB Engineering Logo"

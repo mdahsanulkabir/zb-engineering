@@ -104,13 +104,13 @@ const page = () => {
                     <div
                         className="relative bg-white rounded-lg shadow-2xl overflow-auto 
                         w-[calc(60vw - 40px)] 
-                        h-[calc(100vh - 80px)]
+                        h-[calc(100vh - 40px)]
                         min-lg:min-w-[800px]
                         "
                         style={{
                             // width: "calc(50vw - 40px)",
                             // height: "calc(100vh - 80px)",
-                            margin: "40px 20px 40px 20px",
+                            margin: "20px",
                             boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
                         }}
                     >
@@ -125,7 +125,7 @@ const page = () => {
                         <div className="p-4 mt-8 flex flex-col items-center lg:flex-row lg:gap-6">
                             <div className="lg:w-2/5 lg:flex lg:flex-col lg:items-center">
                                 <div className="lg:flex lg:justify-center">
-                                    <div className="shadow-lg shadow-gray-400 mb-6 rounded-lg w-[200px] h-[266px] rounded-lg">
+                                    <div className="shadow-lg shadow-gray-400 mb-6 rounded-lg">
                                         <Image
                                             src={selectedProject.image}
                                             alt={selectedProject.name}
@@ -136,7 +136,7 @@ const page = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-1 mb-4 justify-center items-center">
-                                    <h3 className="text-2xl font-semibold ">{selectedProject.name}</h3>
+                                    <h3 className="text-2xl font-semibold text-center">{selectedProject.name}</h3>
                                     <p className="text-gray-600">{`${selectedProject.location[selectedProject.location.length - 1]}, ${selectedProject.district}`}</p>
                                 </div>
                             </div>
