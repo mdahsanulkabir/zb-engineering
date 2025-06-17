@@ -125,7 +125,7 @@ const page = () => {
                         <div className="p-4 mt-8 flex flex-col items-center lg:flex-row lg:gap-6">
                             <div className="lg:w-2/5 lg:flex lg:flex-col lg:items-center">
                                 <div className="lg:flex lg:justify-center">
-                                    <div className="shadow-lg shadow-gray-400 mb-6 rounded-lg">
+                                    <div className="shadow-lg shadow-gray-400 mb-6 rounded-lg w-[200px] h-[266px] rounded-lg">
                                         <Image
                                             src={selectedProject.image}
                                             alt={selectedProject.name}
@@ -145,15 +145,15 @@ const page = () => {
                                     <div>
                                         <h4 className="text-lg flex justify-center font-semibold mb-2 underline decoration-[#F3692A] decoration-2 underline-offset-2 ">Project Details</h4>
                                         {/* <p className="text-gray-700 mb-2">{selectedProject.description}</p> */}
-                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 p-2">
+                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 lg:p-2">
                                             <p className="text-gray-700"><strong>Category:</strong></p>
                                             <p className="text-gray-700">{firstLetterToUpperCase(selectedProject.category)}</p>
                                         </div>
-                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 p-2">
+                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 lg:p-2">
                                             <p className="text-gray-700"><strong>Floors:</strong></p>
                                             <p className="text-gray-700">{(selectedProject.noOfFloors)}</p>
                                         </div>
-                                        <div className="grid grid-cols-2 border-b border-gray-300 p-2">
+                                        <div className="grid grid-cols-2 border-b border-gray-300 lg:p-2">
                                             <p className="text-gray-700 max-[470px]:col-span-2"><strong>Service Provided:</strong></p>
                                             <div className="max-[470px]:col-span-2 max-[470px]:pl-16">
                                                 {selectedProject.serviceType.map((service, idx) => (
@@ -161,11 +161,11 @@ const page = () => {
                                                 ))}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 p-2">
+                                        <div className="grid grid-cols-2 gap-1 border-b border-gray-300 lg:p-2">
                                             <p className="text-gray-700"><strong>Stage:</strong></p>
                                             <p className="text-gray-700">{firstLetterToUpperCase(selectedProject.stage)}</p>
                                         </div>
-                                        <div className="grid grid-cols-2 gap-1 p-2">
+                                        <div className="grid grid-cols-2 gap-1 lg:p-2">
                                             <p className="text-gray-700"><strong>{selectedProject.stage === 'completed' ? "Completed On:" : "Expected Completion On:"}</strong></p>
                                             <p className="text-gray-700 mt-auto">{formatDate(selectedProject.stageDate)}</p>
                                         </div>

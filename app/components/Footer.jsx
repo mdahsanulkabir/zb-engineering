@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-10 px-4 sm:px-8 md:px-12 lg:px-20">
             {/* Logo and Company Name */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-5">
+            <div className="flex flex-row items-center gap-2 sm:gap-5">
                 <Image src={logo} alt="ZB Engineering Logo" width={32} height={32} />
                 <p className="text-lg font-bold">ZB Engineering & Technology</p>
             </div>
