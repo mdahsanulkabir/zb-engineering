@@ -48,11 +48,11 @@ const Testimonial = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center items-center">
+            {/* <div className="flex justify-center items-center ">
                 <p className="text-[#FF7420] font-medium text-md underline cursor-pointer px-2 mx-auto">
                     More Testimonials...
                 </p>
-            </div>
+            </div> */}
         </div>
     );
 };
