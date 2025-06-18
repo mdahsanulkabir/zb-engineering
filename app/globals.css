@@ -67,8 +67,7 @@ body {
     max-w-[300px]
     min-[530px]:flex-row 
     min-[700px]:flex-col 
-    min-[700px]:w-[220px]
-    min-[900px]:w-[180px]
+    min-[700px]:w-[200px]
     gap-2 items-start 
     bg-[#F3692A]/10 p-4 rounded-lg shadow-sm shadow-gray-400 
     /* w-full  */
