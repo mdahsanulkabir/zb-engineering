@@ -25,11 +25,11 @@ const Navbar = () => {
                         width={48}
                         height={48}
                     />
-                    <p className="font-bold text-base min-[470px]:text-xl">ZB Engineering <br className="hidden min-[860px]:block min-[1065px]:hidden" />& Technology</p>
+                    <p className="font-bold text-base min-[470px]:text-xl">ZB Engineering <br className="hidden min-[920px]:block min-[1065px]:hidden" />& Technology</p>
                 </div>
 
                 {/* Desktop Nav */}
-                <ul className="hidden min-[860px]:flex items-center gap-6 font-semibold text-lg text-white">
+                <ul className="hidden min-[920px]:flex items-center gap-6 font-semibold text-lg text-white">
                     {["/", "/about", "/projects", "/services", "/contact"].map((href) => (
                         <Link
                             key={href}
@@ -58,7 +58,7 @@ const Navbar = () => {
                 {
                     sidebarOpen && (
                         <div 
-                            className={`fixed top-4 right-0 w-[250px] h-7/8 backdrop-blur-md shadow-[-10px_0px_10px_rgb(0,0,0)]/50 bg-white/10 shadow-gray-400 z-49 rounded-lg transform transition-transform duration-300 ease-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} block min-[860px]:hidden`}>
+                            className={`fixed top-4 right-0 w-[250px] h-7/8 backdrop-blur-md shadow-[-10px_0px_10px_rgb(0,0,0)]/50 bg-white/10 shadow-gray-400 z-49 rounded-lg transform transition-transform duration-300 ease-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} block min-[920px]:hidden`}>
                             <div className="flex justify-end p-4">
                                 <AiOutlineClose onClick={closeSidebar} className="cursor-pointer" size={24} />
                             </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
                         </div>
                     )
                 }
-                <button onClick={() => toggleSidebar()} className="block min-[860px]:hidden"><FaBars size={20} /></button>
+                <button onClick={() => toggleSidebar()} className="block min-[920px]:hidden"><FaBars size={20} /></button>
             </div>
 
             {/* Space for fixed navbar */}
