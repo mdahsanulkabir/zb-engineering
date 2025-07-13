@@ -47,7 +47,14 @@ const Footer = () => {
                                 <FaPhoneAlt /> <span>+880 171 309 2052</span>
                             </li>
                             <li className="flex items-center gap-2">
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=61561311471666"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className=" cursor-pointer flex items-center gap-2"
+                                >
                                 <FaFacebook /> <span>facebook.com/zbet</span>
+                                </a>
                             </li>
                             <li className="flex items-center gap-2">
                                 <FaLinkedin /> <span>linkedin.com/zbet</span>
