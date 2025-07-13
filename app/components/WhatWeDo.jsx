@@ -12,10 +12,22 @@ const WhatWeDo = () => {
                 <ul className="w-1/2 text-sm min-[480px]:text-base sm:text-lg">
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Rajuk Plan Approval</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Civil Works Construction</li>
-                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>MEP Drawing, Design and Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Soil Test and Digital Survey</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Pre-Fabricated Steel Structure Construction</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>MEP (Mechanical/Electrical/Plumbing) Drawing, Design and Installation</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Engineering Consultancy</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Architectrual Drawing</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Interior and Exterior Decoration Works</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>CCTV Camera Network Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>PABX System Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Lift Access Control</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Video Door Phone Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Biometric Access Control Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Lift and Generator Installation and Servicing</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Sub-Station Installation and Servicing</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Solar Panel System Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>HVAC System Installation and Service</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Fire Safety Protection</li>
                 </ul>
                 <div className="relative w-1/2">
                     <Image
