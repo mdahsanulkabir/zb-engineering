@@ -25,9 +25,11 @@ const WhatWeDo = () => {
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Biometric Access Control Installation</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Lift and Generator Installation and Servicing</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Sub-Station Installation and Servicing</li>
-                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Solar Panel System Installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Solar Power System Installation</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>HVAC System Installation and Service</li>
                     <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Fire Safety Protection</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>IT infrastructure installation</li>
+                    <li className="flex items-baseline gap-2"><span className="text-[#FF7420] mt-1"><FaCheckCircle size={12}/></span>Software Development</li>
                 </ul>
                 <div className="relative w-1/2">
                     <Image
