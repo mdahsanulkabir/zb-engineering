@@ -32,14 +32,24 @@ const page = () => {
             <div className="w-full py-6">
                 <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-8">
                     <div className="relative h-[400px] w-[300px] bg-gray-300/50 rounded-lg shadow-lg shadow-gray-400">
-                        <div className="absolute w-full h-[400px] pointer-events-none z-20 rounded-b-lg" style={{ background: `linear-gradient(to top, rgba(17, 17, 17, 0.8) 0%, rgba(17, 17, 17, 0.5) 15%, rgba(17, 17, 17, 0) 20%)` }}>
+                        <Image
+                            src="/images/team/ceo.jpg" // <-- update this path to your chairman's image in /public/images/team/
+                            alt="Md. Abdul Quadir"
+                            fill
+                            className="object-cover rounded-lg"
+                            style={{ zIndex: 10 }}
+                            priority
+                        />
+                        <div className="absolute w-full h-[400px] pointer-events-none z-20 rounded-b-lg"
+                            style={{ background: `linear-gradient(to top, rgba(17, 17, 17, 0.8) 0%, rgba(17, 17, 17, 0.5) 15%, rgba(17, 17, 17, 0) 20%)` }}
+                        >
                             <div className="absolute bottom-2 left-0 right-0">
                                 <p className=" text-white font-semibold text-center">Md. Abdul Quadir</p>
-                                <p className="text-white text-xs text-center">Chairman</p>
+                                <p className="text-white text-xs text-center">CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div className="relative h-[400px] w-[300px] bg-gray-300/50 rounded-lg shadow-lg shadow-gray-400">
+                    {/* <div className="relative h-[400px] w-[300px] bg-gray-300/50 rounded-lg shadow-lg shadow-gray-400">
                         <div className="absolute w-full h-[400px] pointer-events-none z-20 rounded-b-lg" style={{ background: `linear-gradient(to top, rgba(17, 17, 17, 0.8) 0%, rgba(17, 17, 17, 0.5) 15%, rgba(17, 17, 17, 0) 20%)` }}>
                             <div className="absolute bottom-2 left-0 right-0">
                                 <p className=" text-white font-semibold text-center">Md. Gias Kamal</p>
@@ -54,7 +64,7 @@ const page = () => {
                                 <p className="text-white text-xs text-center">Director</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
